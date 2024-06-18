@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenue</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('file:///C:/Users/JOSIA/Desktop/giphy.webp');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden; /* Empêche le défilement de la page si l'image est plus grande */
+        }
+
+        .content {
+            text-align: center;
+            background-color: rgba(255, 255, 255, 0.8); /* Fond semi-transparent pour le texte */
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            margin-top: 20px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #welcomeText {
+            font-size: 24px;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1 id="welcomeText">Bienvenue</h1>
+        <button onclick="changeText()">Cliquez ici</button>
+    </div>
+
+    <script>
+        function changeText() {
+            var welcomeText = document.getElementById("welcomeText");
+            welcomeText.textContent = "Josias Le nouveau développeur web";
+        }
+    </script>
+</body>
+</html>
